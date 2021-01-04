@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.names {
+  font-size: large;
+  margin-left: 30px;
+}
+.top-left {
+  position: absolute;
+  top: 140px;
+  left: 700px;
+}
+.add_button {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  font-size: large;
+  border: 3px solid #9510b6;
+  margin-left: 90px;
+  outline: 0;
+}
+.h_title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn_submit,
+.btn_cancel {
+  border: none;
+  color: #9510b6;
+  background-color: white;
+  font-size: large;
+  outline: 0;
+}
+
+.btn_submit {
+  margin-left: 170px;
+}
+
+.btn_cancel {
+  margin-left: -240px;
+}
+
+.inputs {
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #beb2c2;
+  width: 100%;
+  margin-top: 20px;
+}
+
+input[type="text"]:hover {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid green;
+  color: green;
+  width: 100%;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.Modal {
+  position: absolute;
+  top: 140px;
+  left: 680px;
+}
+
+.Actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.delete_btn,
+.update_btn {
+  width: 80px;
+  background-color: white;
+  font-size: large;
+  outline: none;
+  border-radius: 10px;
+}
+
+.delete_btn {
+  border: 2px solid red;
+  color: red;
+}
+
+.update_btn {
+  border: 2px solid green;
+  color: green;
+}
+.go_to_contacts {
+  color: blue;
+  font-size: small;
+  text-align: center;
 }
